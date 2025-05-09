@@ -1,0 +1,764 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color:white;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+header{
+    background : linear-gradient(-90deg, rgba(13, 166, 255, 0.952), rgb(7, 7, 54));
+    padding: 1.5rem 0;
+    text-align: center;
+}
+header h1{
+    text-align: center;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-family: algerian;
+    color: white;
+    text-shadow: rgb(7, 7, 54)  10px 7px 7px;
+}
+nav{
+    width: 100%;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0 500px;
+    border-radius: 30px;
+    border:2px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgba(255, 255, 255, 0.15);
+    margin-top: 10px;
+
+}
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    color:white;
+    padding: 20px;
+    font-size: 1.5em;
+}
+nav a:hover,
+nav a:focus{
+    color:black;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+    transform: translateY(-7px);
+}
+.Accueil{
+    width: 100%;
+    padding: 1rem;
+}
+.Accueil .description .title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color:  rgb(13, 78, 255);
+    font-family: algerian;
+    text-shadow: rgb(7, 7, 54)  10px 7px px;
+}
+.Accueil .right img{
+    float:right;
+    width: 30%;
+    position: relative;
+}
+.Accueil .left{
+    width: 70%;
+    font-size: 1.4rem;
+}
+.Accueil .left ul li{
+    margin-left: 30px;
+    padding-top: 10px;
+}
+span{
+    color:  rgb(13, 78, 255);
+    font-weight: 600;
+}
+.produits{
+    width: 100%;
+    padding: 120px 0;
+}
+.produits h1{
+    text-align: center;
+    color:  rgb(13, 78, 255);
+    margin-top: 20px;
+}
+.produits .subtitle{
+    width: 100%;
+    font-size: 1.3em;
+    margin: 10px;
+}
+.galerie{
+    display: grid;
+    width: 96%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 300px;
+    grid-gap:30px ;
+    padding-left: 10px;
+    margin-top: 40px;
+}
+.box{
+    padding:0;
+   overflow: hidden;
+}
+.galerie .box img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   display: block;
+   margin: 0;
+}
+ .galerie .box video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+}
+.galerie img:hover {
+    color:rgba(255, 255, 255, 0.2);
+    transform: scale(1.25);
+    transition: 0.3s;
+  
+}
+.marques{
+    display: grid;
+    width: 96%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 300px;
+    grid-gap:30px ;
+    padding-left: 10px;
+    margin-top: 40px;
+}
+.marques .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+}
+.marques .box video{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+}
+.marques img:hover {
+    color:rgba(255, 255, 255, 0.2);
+    transform: scale(1.25);
+    transition: 0.3s;
+}
+  .galerie, .marques {
+    grid-template-columns: repeat(5, 1fr);
+}
+h1, .phrase{
+    color: #075e54;
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 20px;
+    text-align: center;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+input, textarea, select {
+    width: 40%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-align: center;
+}
+button {
+    background-color: #25D366;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 40%;
+    transition: background-color 0.3s;
+    margin-left: 30%;
+}
+button:hover {
+    background-color: #128C7E;
+}
+.whatsapp-icon {
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+#confirmation {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #dcf8c6;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+}
+
+.info .title {
+    text-align: center;
+    color: rgb(13, 78, 255);
+    margin-top: 10px;
+    font-size: 1.3rem; 
+}
+
+.info .subtitle {
+    width: 100%;
+    font-size: 1.3rem; 
+    margin: 10px;
+}
+
+.Contact {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(23, 23, 27, 0.993);
+    color: white;
+    padding: 10px 0;
+}
+
+.Contact > div {
+    padding: 10px;
+}
+
+.Contact .titre {
+    font-size: 1.5rem;
+    color: rgb(243, 243, 243);
+    margin-bottom: 8px;
+}
+
+.Contact .details {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.Contact a {
+    text-decoration: none;
+    color: rgb(250, 244, 244);
+    font-size: 1rem;
+}
+.Reseaux a img{
+    width: 50px;
+    padding-left:10px;    
+}
+.footer {
+    text-align: center;
+    background-color: rgba(23, 23, 27, 0.993);
+    color: white;
+    padding: 30px 0;
+}
+
+.footer p {
+    font-size: 1.2rem; 
+    white-space: nowrap;
+    margin: 5px 0;
+}
+
+@media (max-width:992px){
+    header h1{
+        font-size: 2em;
+    }
+    nav{
+        width: 100%;
+    }
+    nav ul{
+        list-style-type: none;
+        margin: 7px 40px 0 40px;
+        border-radius: 30px;
+        border:2px solid rgba(255, 255, 255, 0.5);
+        display: flex;
+        justify-content: space-evenly;
+        background: rgba(255, 255, 255, 0.15);
+        width: 90%;
+    
+    }
+    nav a{
+        display: inline-block;
+        text-decoration: none;
+        color:white;
+        padding: 10px;
+        font-size: 1.3em;
+    }
+    nav a:hover,
+    nav a:focus{
+        color:black;
+        text-decoration: underline;
+        transition: all 0.3s ease;
+        transform: translateY(-7px);
+    }
+    .Accueil{
+        width: 100%;
+        padding: 1rem;
+    }
+    .Accueil .description .title{
+        font-weight: 600;
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+        color:  rgb(13, 78, 255);
+        font-family: algerian;
+        text-shadow: rgb(7, 7, 54)  10px 7px px;
+    }
+    .Accueil .right img{
+        float:right;
+        width: 30%;
+        position: relative;
+    }
+    .Accueil .left{
+        width: 70%;
+        font-size: 1.2rem;
+    }
+    .Accueil .left h2{
+        font-size: 1.1em;
+    }
+    .Accueil .left ul li{
+        margin-left: 30px;
+        padding-top: 10px;
+    }
+    .produits{
+        width: 100%;
+        padding: 15px 0;
+    }
+    .produits h1{
+        color:  rgb(13, 78, 255);
+        margin-top: 20px;
+        font-size: 1.3rem;
+    }
+    .produits .subtitle{
+        width: 100%;
+        font-size: 1.2em;
+        margin: 10px;
+    }
+    .galerie, .marques {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .info .title{
+        font-size: 1.2rem;
+    }
+    .info .subtitle{
+        font-size: 1.2rem;
+    }
+    .Contact {
+        width: 100%;
+        background-color:  rgba(23, 23, 27, 0.993);
+        color: white;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 09.em;
+    }
+    .Contact .titre{
+        font-size: 1.3rem;
+    }
+    .Contact .details{
+        font-size: 0.9rem;
+    }
+    .Contact .subtitle{
+        font-size: 1.2rem;
+    }
+    .Contact a{
+        font-size: 0.9rem;
+    }
+    .Reseaux a img{
+        width: 40px;
+        padding-left:7px;    
+    }
+    .footer p{
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width:768px){
+    header h1{
+        font-size: 1.5em;
+    }
+    nav{
+        width: 100%;
+    }
+    nav ul{
+        list-style-type: none;
+        margin: 7px 40px 0 40px;
+        border-radius: 30px;
+        border:2px solid rgba(255, 255, 255, 0.5);
+        display: flex;
+        justify-content: space-evenly;
+        background: rgba(255, 255, 255, 0.15);
+        width: 90%;
+    
+    }
+    nav a{
+        display: inline-block;
+        text-decoration: none;
+        color:white;
+        padding: 10px;
+        font-size: 1.1em;
+    }
+    nav a:hover,
+    nav a:focus{
+        color:black;
+        text-decoration: underline;
+        transition: all 0.3s ease;
+        transform: translateY(-7px);
+    }
+    .Accueil{
+        width: 100%;
+        padding: 1rem;
+    }
+    .Accueil .description .title{
+        font-weight: 600;
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+        color:  rgb(13, 78, 255);
+        font-family: algerian;
+        text-shadow: rgb(7, 7, 54)  10px 7px px;
+    }
+    .Accueil .right img{
+        float:right;
+        width: 30%;
+        position: relative;
+    }
+    .Accueil .left{
+        width: 70%;
+        font-size: 1rem;
+    }
+    .Accueil .left h2{
+        font-size: 0.9em;
+    }
+    .Accueil .left ul li{
+        margin-left: 30px;
+        padding-top: 10px;
+    }
+    .produits{
+        width: 100%;
+        padding: 15px 0;
+    }
+    .produits h1{
+        color:  rgb(13, 78, 255);
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+    .produits .subtitle{
+        width: 100%;
+        font-size: 1rem;
+        margin: 10px;
+    }
+    .galerie, .marques {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .info .title{
+        font-size: 1rem;
+    }
+    .info .subtitle{
+        font-size: 1rem;
+    }
+    .Contact {
+        width: 100%;
+        background-color:  rgba(23, 23, 27, 0.993);
+        color: white;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 0.9rem;
+    }
+    .Contact .titre{
+        font-size: 1rem;
+    }
+    .Contact .details{
+        font-size: 0.9rem;
+    }
+    .Contact .subtitle{
+        font-size: 1.2rem;
+    }
+    .Contact a{
+        font-size: 0.8rem;
+    }
+    .Reseaux a img{
+        width: 35px;
+        padding-left:5px;    
+    }
+    .footer p{
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width:576px){
+    header h1{
+        font-size: 1em;
+    }
+    nav{
+        width: 90%;
+    }
+    nav ul{
+        list-style-type: none;
+        margin: 7px 40px 0 40px;
+        border-radius: 30px;
+        border:2px solid rgba(255, 255, 255, 0.5);
+        display: flex;
+        justify-content: space-evenly;
+        background: rgba(255, 255, 255, 0.15);
+        width: 90%;
+    
+    }
+    nav a{
+        display: inline-block;
+        text-decoration: none;
+        color:white;
+        padding: 10px;
+        font-size: 1rem;
+    }
+    nav a:hover,
+    nav a:focus{
+        color:black;
+        text-decoration: underline;
+        transition: all 0.3s ease;
+        transform: translateY(-7px);
+    }
+    .Accueil{
+        width: 100%;
+        padding: 1rem;
+    }
+    .Accueil .description .title{
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+        color:  rgb(13, 78, 255);
+        font-family: algerian;
+        text-shadow: rgb(7, 7, 54)  10px 7px px;
+    }
+    .Accueil .right img{
+        float:right;
+        width: 30%;
+        position: relative;
+    }
+    .Accueil .left{
+        width: 70%;
+        font-size: 1rem;
+    }
+    .Accueil .left h2{
+        font-size: 0.9em;
+    }
+    .Accueil .left ul li{
+        margin-left: 30px;
+        padding-top: 10px;
+    }
+    .produits{
+        width: 100%;
+        padding: 15px 0;
+    }
+    .produits .title{
+        color:  rgb(13, 78, 255);
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+    .produits .subtitle{
+        width: 100%;
+        font-size: 1rem;
+        margin: 10px;
+    }
+    .galerie, .marques {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #whatsappForm {
+    padding: 0 15px; 
+    }
+
+    .form-group {
+    margin-bottom: 25px; 
+    }
+    input, textarea, button {
+    width: 100% !important; 
+    min-height: 44px; 
+    font-size: 16px; 
+    padding: 12px 15px; 
+    }
+    button {
+    padding: 15px !important; 
+    font-size: 14px;
+    margin-left: 10px;
+    }
+    .whatsapp-icon {
+    width: 28px; 
+    }
+    .info .title{
+        font-size: 0.8rem;
+    }
+    .info .subtitle{
+        font-size: 0.9rem;
+    }
+    .Contact {
+        width: 100%;
+        background-color:  rgba(23, 23, 27, 0.993);
+        color: white;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 0.9rem;
+    }
+    .Contact .titre{
+        font-size: 0.6rem;
+    }
+    .Contact .details{
+        font-size: 0.6rem;
+    }
+    .Contact .subtitle{
+        font-size: 0.8rem;
+    }
+    .Contact a{
+        font-size: 0.65rem;
+    }
+    .Reseaux a img{
+        width: 25px;
+        padding-left:5px;    
+    }
+    .footer p{
+        font-size: 0.65em;
+    }
+}
+
+@media (max-width:400px){
+    header h1{
+        font-size: 0.9rem;
+    }
+    nav{
+        width: 90%;
+    }
+    nav ul{
+        list-style-type: none;
+        margin: 7px 40px 0 40px;
+        border-radius: 30px;
+        border:2px solid rgba(255, 255, 255, 0.5);
+        display: flex;
+        justify-content: space-evenly;
+        background: rgba(255, 255, 255, 0.15);
+        width: 90%;
+    
+    }
+    nav a{
+        display: inline-block;
+        text-decoration: none;
+        color:white;
+        padding: 10px;
+        font-size: 1rem;
+    }
+    nav a:hover,
+    nav a:focus{
+        color:black;
+        text-decoration: underline;
+        transition: all 0.3s ease;
+        transform: translateY(-7px);
+    }
+    .Accueil{
+        width: 100%;
+        padding: 1rem;
+    }
+    .Accueil .description .title{
+        font-weight: 600;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        color:  rgb(13, 78, 255);
+        font-family: algerian;
+        text-shadow: rgb(7, 7, 54)  10px 7px px;
+    }
+    .Accueil .right img{
+        float:right;
+        width: 30%;
+        position: relative;
+    }
+    .Accueil .left{
+        width: 70%;
+        font-size: 1rem;
+    }
+    .Accueil .left h2{
+        font-size: 0.9em;
+    }
+    .Accueil .left ul li{
+        margin-left: 30px;
+        padding-top: 10px;
+    }
+    .produits{
+        width: 100%;
+        padding: 15px 0;
+    }
+    .produits .title{
+        color:  rgb(13, 78, 255);
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+    .produits .subtitle{
+        width: 100%;
+        font-size: 1rem;
+        margin: 10px;
+    }
+    .galerie, .marques {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #whatsappForm {
+    padding: 0 15px; 
+    }
+
+    .form-group {
+    margin-bottom: 25px; 
+    }
+    input, textarea, button {
+    width: 100% !important; 
+    min-height: 44px; 
+    font-size: 16px; 
+    padding: 12px 15px; 
+    }
+    button {
+    padding: 15px !important; 
+    font-size: 14px;
+    margin-left: 10px;
+    }
+    .whatsapp-icon {
+    width: 28px; 
+    }
+    .info .title{
+        font-size: 0.8rem;
+    }
+    .info .subtitle{
+        font-size: 0.9rem;
+    }
+    .Contact {
+        width: 100%;
+        background-color:  rgba(23, 23, 27, 0.993);
+        color: white;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 0.9rem;
+    }
+    .Contact .titre{
+        font-size: 0.6rem;
+    }
+    .Contact .details{
+        font-size: 0.6rem;
+    }
+    .Contact .subtitle{
+        font-size: 0.7rem;
+    }
+    .Contact a{
+        font-size: 0.6rem;
+    }
+    .Reseaux a img{
+        width: 25px;
+        padding-left:3px;    
+    }
+    .footer p{
+        font-size: 0.6em;
+    }
+}

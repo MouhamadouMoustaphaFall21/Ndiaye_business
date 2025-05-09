@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ndiaye Business-Vente telephone</title>
+        <link rel="stylesheet" href="business.css">
+        <script src="script.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>bienvenue chez ndiaye business</h1>
+            <nav>
+                <ul>
+                    <li><a href="#Accueil">Accueil</a></li>
+                    <li><a href="#produits"> Produits</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="Accueil" class="Accueil">
+            <div class="description">
+               <h1 class="title">Votre spécialiste high-tech préféré !</h1>
+               <div class="right">
+                    <img src="img/logo.jpeg" alt="logo">
+               </div>
+               <div class="left">
+                    <p>📲 Téléphones & 🎧 Accessoires | ♻️ Échanges Acceptés</p>
+                    <h2>Pourquoi choisir Ndiaye Business ?</h2>
+                    <p>Chez Ndiaye Business, nous proposons une large gamme de smartphones (toutes marques) et d’accessoires téléphoniques de qualité à des prix imbattables..</p>
+                 <ul>
+                     <li><span>📲 Téléphones neufs</span> (iPhone, Samsung, Techno, Huawei, etc.)</li>
+                     <li><span>🎧 Accessoires </span>: Airpods, écouteurs, câbles, chargeurs ultra-rapides, protéges, batteries..</li>
+                     <li><span>♻️ Échange possible </span>: Apportez votre ancien téléphone et repartez avec un nouveau !</li>
+                     <li><span>100% fiable</span></li>
+                     <li><span>Garantie incluse</span></li>
+                     <li><span>Facture fournie</span></li>
+                 </ul>
+               </div>
+            </div>
+        </section> 
+        <section id="produits" class="produits">
+            <h1 class="title">📲 NOS PRODUITS – Téléphones & Accessoires Haut de Gamme</h1>
+            <div class="iPhone">
+            <p class="subtitle">Découvrez notre sélection exclusive à prix imbattables !</p>
+            <h1 class="title">Tous les iPhones sont disponibles !</h1>
+            <div class="galerie">
+                <div class="box"><video controls="controls">
+                                    <source src="img/iphone.mp4">
+                                </video>
+                </div>
+                <div class="box"><video controls="controls">
+                                  <source src="img/3.mp4">
+                                </video>
+                </div>
+                <div class="box"><video controls="controls">
+                                    <source src="img/pro.mp4">
+                                 </video>
+            </div>
+                <div class="box"><video controls="controls">
+                                   <source src="img/14.mp4">
+                                </video>
+                </div>
+                <div class="box"><video controls="controls">
+                                   <source src="img/promax.mp4">
+                                </video>
+                </div>
+                <div class="box"><img src="img/12proo.jpeg" alt="call"></div>
+                <div class="box"><img src="img/iphone.jpeg" alt="call"></div>
+                <div class="box"><img src="img/13pro.jpeg" alt="call"></div>
+                <div class="box"><img src="img/pexels-jessbaileydesign-788946.jpg" alt="call"></div>
+                <div class="box"><img src="img/pexels-vickygraphy-13367286.jpg" alt="call"></div>
+            </div>
+            </div>
+            <h1 class="title">Toutes les autres marques de téléphones sont disponibles !</h1>
+            <div class="marques">
+                <div class="box"><video controls="controls">
+                                    <source src="img/vid1.mp4">
+                                </video>
+                </div>
+                <div class="box"><img src="img/adeniji-abdullahi-a-eQWLMQLlGyc-unsplash.jpg" alt="call"></div>
+                <div class="box"><img src="img/4.jpeg" alt="call"></div>
+                <div class="box"><img src="img/anh-nhat-uCqMa_s-JDg-unsplash.jpg" alt="call"></div>
+                <div class="box"><video controls="controls">
+                                    <source src="img/vid2.mp4">
+                                 </video>
+               </div>
+               <div class="box"><img src="img/WhatsApp Image 2025-04-26 at 15.41.12.jpeg" alt="call"></div>
+               <div class="box"><img src="img/WhatsApp Image 2025-04-26 at 15.40.16.jpeg" alt="call"></div>
+                <div class="box"><video controls="controls">
+                    <source src="img/vid3.mp4">
+                  </video>
+                </div>
+                <div class="box"><img src="img/81HPaGA3hxL.jpg" alt="call"></div>
+                <div class="box"><img src="img/andrey-matveev-snSCyhHoCLY-unsplash.jpg" alt="call"></div>
+            </div>
+            <h1>Passer une commande</h1>
+        <p class="phrase">Remplissez le formulaire pour envoyer votre commande directement sur WhatsApp</p>
+        
+        <form id="whatsappForm">
+            <div class="form-group">
+                <label for="client_nom">Nom complet:</label>
+                <input type="text" id="client_nom" name="client_nom" required placeholder="Votre nom">
+            </div>
+            
+            <div class="form-group">
+                <label for="telephone">Votre numéro de téléphone:</label>
+                <input type="tel" id="telephone" name="telephone" required placeholder="77 153 95 01">
+            </div>
+            
+            <div class="form-group">
+                <label for="produit">Produit désiré:</label>
+                <input type="text" id="produit" name="produit" required placeholder="Que voulez-vous commander ?">
+            </div>
+            
+            <div class="form-group">
+                <label for="quantite">Quantité:</label>
+                <input type="number" id="quantite" name="quantite" min="1" value="1" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message complémentaire:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Couleur, modèle spécifique, echange..."></textarea>
+            </div>
+            
+            <button type="submit">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+                Envoyer la commande via WhatsApp
+            </button>
+        </form>
+        
+        <div id="confirmation">
+            <h3>Merci pour votre commande !</h3>
+            <p>Vous allez être redirigé vers WhatsApp pour finaliser votre commande.</p>
+            <p>Si la redirection ne fonctionne pas, <a id="whatsappLink" href="#">cliquez ici</a>.</p>
+        </div>
+        </section>
+        <section id="Contact" class="info">
+            <h1 class="title">NOUS CONTACTER</h1>
+            <p class="subtitle">Vous souhaitez commander un smartphone, des accessoires ou obtenir des informations sur nos services ? Nous sommes à votre disposition</p>
+            <div class="Contact">
+            <div class="phone">
+                <h3 class="titre">Contact</h3>
+                <p class="details">+221 77 153 95 01</p>
+                <p><a href="mailto"> Ouzinndiaye079@gmail.com</a></p>
+            </div>
+            <div class="Horraire">
+                <h3 class="titre">Horaire</h3>
+                <p class="details">lun-Sam :9h30-23h</p>
+                <p class="details">Dim :10h30-20h</p>
+            </div>
+            <div class="Reseaux">
+                <h3 class="titre">Reseaux Sociaux</h3>
+                <a href="https://www.instagram.com/ndiayebusiness97?igsh=eG9sYTJtMW5pNWx4&utm_source=qr"><img src="img/Instagram_icon.png" alt="instagram"></a>
+                <a href="https://snapchat.com/t/HVd0ZQtK"><img src="img/Snapchat.png" alt="snap"></a>
+                <a href="https://www.facebook.com/share/16eiX6NJ2x/?mibextid=wwXIfr"><img src="img/Facebook_logo_(square).png" alt="facebook"></a>
+            </div>
+        </div>
+        </section>
+        <hr>
+        <div class="footer">
+            <p>© 2025 Ndiaye Business | Diamaguene, Sénégal</p>
+            <p>Site conçu et développé par Mouhamadou M.Fall :+221 76 742 21 24</p>
+        </div>
+    </body>
