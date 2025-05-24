@@ -3,6 +3,9 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+  }
 body {
     background-color:white;
     line-height: 1.6;
@@ -97,7 +100,7 @@ span{
     font-size: 1.3em;
     margin: 10px;
 }
-.galerie{
+.galerie, .marques{
     display: grid;
     width: 96%;
     grid-template-columns: repeat(5, 1fr);
@@ -110,56 +113,18 @@ span{
     padding:0;
    overflow: hidden;
 }
-.galerie .box img{
+.galerie .box img, .galerie .box video,
+.marques .box img,.marques .box video{
    width: 100%;
    height: 100%;
    object-fit: cover;
    display: block;
    margin: 0;
 }
- .galerie .box video{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    margin: 0;
-}
-.galerie img:hover {
+.galerie img:hover, .marques img:hover {
     color:rgba(255, 255, 255, 0.2);
     transform: scale(1.25);
     transition: 0.3s;
-  
-}
-.marques{
-    display: grid;
-    width: 96%;
-    grid-template-columns: repeat(5, 1fr);
-    grid-auto-rows: 300px;
-    grid-gap:30px ;
-    padding-left: 10px;
-    margin-top: 40px;
-}
-.marques .box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    margin: 0;
-}
-.marques .box video{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-    margin: 0;
-}
-.marques img:hover {
-    color:rgba(255, 255, 255, 0.2);
-    transform: scale(1.25);
-    transition: 0.3s;
-}
-  .galerie, .marques {
-    grid-template-columns: repeat(5, 1fr);
 }
 h1, .phrase{
     color: #075e54;
@@ -256,9 +221,27 @@ button:hover {
     color: rgb(250, 244, 244);
     font-size: 1rem;
 }
-.Reseaux a img{
-    width: 50px;
-    padding-left:10px;    
+.Reseaux{
+    gap: 30px;
+}
+.Reseaux a{
+    color: rgb(240, 241, 241);
+    transition: transform 0.3s ease;
+    display: inline-block; 
+    font-size: 2em;
+    margin: 0 10px;
+}
+.Reseaux .ig:hover {
+    color: rgba(252, 77, 46, 0.877);
+    transform: scale(1.5);
+}
+.Reseaux .snap:hover {
+    color: rgb(255, 218, 7);
+    transform: scale(1.5);
+}
+.Reseaux .fb:hover {
+    color: rgb(5, 42, 255);
+    transform: scale(1.5);
 }
 .footer {
     text-align: center;
@@ -266,7 +249,6 @@ button:hover {
     color: white;
     padding: 30px 0;
 }
-
 .footer p {
     font-size: 1.2rem; 
     white-space: nowrap;
@@ -376,11 +358,26 @@ button:hover {
     .Contact a{
         font-size: 0.9rem;
     }
-    .Reseaux a img{
-        width: 40px;
-        padding-left:7px;    
+    .Reseaux a{
+    color: rgb(240, 241, 241);
+    transition: transform 0.3s ease;
+    display: inline-block; 
+    font-size: 2em;
+    margin: 0 10px;
     }
-    .footer p{
+    .Reseaux .ig:active{
+    color: rgba(252, 77, 46, 0.877);
+    transform: scale(1.3);
+     }
+    .Reseaux .snap:active {
+    color: rgb(255, 218, 7);
+    transform: scale(1.3);
+    } 
+    .Reseaux .fb:active {
+    color: rgb(5, 42, 255);
+    transform: scale(1.3);
+    }
+  .footer p{
         font-size: 0.9em;
     }
 }
@@ -488,10 +485,25 @@ button:hover {
     .Contact a{
         font-size: 0.8rem;
     }
-    .Reseaux a img{
-        width: 35px;
-        padding-left:5px;    
-    }
+    .Reseaux a{
+        color: rgb(240, 241, 241);
+        transition: transform 0.3s ease;
+        display: inline-block; 
+        font-size: 2em;
+        margin: 0 8px;
+        }
+        .Reseaux .ig:active{
+        color: rgba(252, 77, 46, 0.877);
+        transform: scale(1.3);
+         }
+        .Reseaux .snap:active {
+        color: rgb(255, 218, 7);
+        transform: scale(1.3);
+        } 
+        .Reseaux .fb:active {
+        color: rgb(5, 42, 255);
+        transform: scale(1.3);
+        }
     .footer p{
         font-size: 0.8em;
     }
@@ -621,10 +633,25 @@ button:hover {
     .Contact a{
         font-size: 0.65rem;
     }
-    .Reseaux a img{
-        width: 25px;
-        padding-left:5px;    
-    }
+    .Reseaux a{
+        color: rgb(240, 241, 241);
+        transition: transform 0.3s ease;
+        display: inline-block; 
+        font-size: 1.4em;
+        margin: 0 4px;
+        }
+        .Reseaux .ig:active{
+        color: rgba(252, 77, 46, 0.877);
+        transform: scale(1.2);
+         }
+        .Reseaux .snap:active {
+        color: rgb(255, 218, 7);
+        transform: scale(1.2);
+        } 
+        .Reseaux .fb:active {
+        color: rgb(5, 42, 255);
+        transform: scale(1.2);
+        }   
     .footer p{
         font-size: 0.65em;
     }
@@ -710,7 +737,6 @@ button:hover {
     #whatsappForm {
     padding: 0 15px; 
     }
-
     .form-group {
     margin-bottom: 25px; 
     }
@@ -754,10 +780,25 @@ button:hover {
     .Contact a{
         font-size: 0.6rem;
     }
-    .Reseaux a img{
-        width: 25px;
-        padding-left:3px;    
-    }
+    .Reseaux a{
+        color: rgb(240, 241, 241);
+        transition: transform 0.3s ease;
+        display: inline-block; 
+        font-size: 1.2em;
+        margin: 0 3px;
+        }
+        .Reseaux .ig:active{
+        color: rgba(252, 77, 46, 0.877);
+        transform: scale(1.1);
+         }
+        .Reseaux .snap:active {
+        color: rgb(255, 218, 7);
+        transform: scale(1.1);
+        } 
+        .Reseaux .fb:active {
+        color: rgb(5, 42, 255);
+        transform: scale(1.1);
+        }   
     .footer p{
         font-size: 0.6em;
     }
